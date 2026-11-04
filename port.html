@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Tolonbaev Umar</title>
+    <!-- ИСПРАВЛЕНО: Правильные рабочие ссылки на Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ИСПРАВЛЕНО: Подключение Font Awesome для иконок в карточках услуг и профиле -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+<main class="main-container">
+
+    <!-- 1. ЛЕВАЯ ПАНЕЛЬ -->
+    <aside class="leftside">
+        <div class="profile-header">
+            <div class="avatar-container">
+                <img src="WhatsApp Image 2026-10-13 at 13.11.38.jpeg" alt="Tolonbaev Umar" class="ava">
+            </div>
+            <h2 class="profile-name">Tolonbaev Umar</h2>
+            <p class="profile-role">Full-Stack Developer</p>
+            
+            <!-- Добавлены ссылки на соцсети -->
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f">
+                    <img src="image.png" alt="logoinst" class="inst">
+                </i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- ИСПРАВЛЕНО: Добавлен блок с личной информацией (Линейки прогресса) -->
+        <div class="info-section">
+            <div class="info-row">
+                <span class="info-label">Age:</span>
+                <span class="info-value">17</span>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Freelance:</span>
+                <span class="info-value status-available">Available</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Address:</span>
+                <span class="info-value">Bishkek, Kyrgyzstan</span>
+            </div>
+        </div>
+
+        <!-- Добавлен блок языков с анимацией прогресса -->
+        <div class="skills-section">
+            <h3>Languages</h3>
+            <div class="skill-block">
+                <div class="skill-info"><span>Russia</span><span>100%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-block">
+                <div class="skill-info"><span>English</span><span>75%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-block">
+                <div class="skill-info"><span>Kyrgyz</span><span>60%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Кнопка скачивания резюме -->
+        <a href="#" class="btn-cv">DOWNLOAD CV <i class="fas fa-download"></i></a>
+    </aside>
+
+    <!-- 2. ЦЕНТРАЛЬНАЯ ОБЛАСТЬ -->
+    <div class="content-area">
+        
+        <!-- Блок карточки Hero -->
+        <section class="hero">
+            <div class="hero-text-block">
+                <h1 class="intro">
+                    I'm Tolonbaev Umar, <br>
+                    <span style="color: #ffb400;">Ala-Too College Student</span>
+                </h1>
+                <p class="learning-tag">Learning IT</p>
+                <button class="btn-hire">HIRE ME <i class="fas fa-arrow-right"></i></button>
+            </div>
+            
+            <div class="hero-img-container">
+                <img src="WhatsApp Image 2026-10-13 at 13.11.38.jpeg" alt="MainTolo" class="heroava">
+            </div>
+        </section>
+
+        <!-- Секция сервисов внутри .content-area -->
+        <section class="services-section">
+            <div class="services-header">
+                <h2>My Services</h2>
+                <p class="services-subtitle">
+                    Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint.<br>
+                    Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
+                </p>
+            </div>
+            
+
+            <!-- ИСПРАВЛЕНО: Добавлены иконки в карточки услуг -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Front-End</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Mobile App, Website Design</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-microphone"></i></div>
+                    <h3>Math And English Studing</h3>
+                    <p>Studing Students For This Lessons</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Game Back-End</h3>
+                    <p>Character Design, Props & Objects</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Photography</h3>
+                    <p>Portrait, Product Photography</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Advertising</h3>
+                    <a href="#" class="order-link">ORDER NOW <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+                <!-- СЕКЦИЯ EDUCATION -->
+        <section class="education-section">
+            <div class="education-header">
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-timeline">
+                
+                <!-- Запись 1 -->
+                <div class="education-item">
+                    <div class="edu-left">
+                        <h3>School 26</h3>
+                        <div class="edu-status-row">
+                            <span class="edu-role">Student</span>
+                            <span class="edu-badge">Sep 2016 - May 2025</span>
+                        </div>
+                    </div>
+                    <div class="edu-right">
+                        <h4>Certificate Of Merit</h4>
+                    </div>
+                </div>
+
+                <!-- Запись 2 -->
+                <div class="education-item">
+                    <div class="edu-left">
+                        <h3>Programming Course</h3>
+                        <div class="edu-status-row">
+                            <span class="edu-role">Student</span>
+                            <span class="edu-badge">May 2025 - Now</span>
+                        </div>
+                    </div>
+                    <div class="edu-right">
+                        <h4>Certificate Of Back-End Courses</h4>
+                    </div>
+                </div>
+
+                <!-- Запись 3 -->
+                <div class="education-item">
+                    <div class="edu-left">
+                        <h3>Web Developer Courses</h3>
+                        <div class="edu-status-row">
+                            <span class="edu-role">Student</span>
+                            <span class="edu-badge">May 2025 - Now</span>
+                        </div>
+                    </div>
+                    <div class="edu-right">
+                        <h4>Certificate Of Web Training</h4>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- 3. ПРАВАЯ НАВИГАЦИЯ -->
+    <nav class="right-nav">
+        <button class="btn-hire" style="padding: 10px; border-radius: 50%; width: 40px; height: 40px;"><i class="fas fa-moon"></i></button>
+    </nav>
+    
+    
+
+</main>
+        <!-- ... Конец секции education-section ... -->
+
+        <!-- ИСПРАВЛЕНО: Добавлен подвал (Footer) -->
+        <footer class="footer-portfolio">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Введите ваш Email">
+                <small id="email-error"></small>
+            </div>
+
+            <button class ="emailbutton" onclick="checkEmail()">Проверить Email</button>
+            <p>2026 All Rights Reserved</p>
+        </footer>
+
+
+<script src="port.js"></script>
+
+</body>
+</html>
