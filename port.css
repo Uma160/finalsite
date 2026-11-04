@@ -24,6 +24,31 @@
     box-sizing: border-box;
 }
 
+/* 1. Стандартная (светлая) тема сайта */
+body {
+  background-color: #ffffff; /* Белый фон */
+  color: #333333;            /* Тёмно-серый текст */
+  transition: background-color 0.3s, color 0.3s; /* Плавная смена цвета */
+}
+
+.colorbutton{
+  background-color: yellow;
+  width: 300;
+  display: block;
+  margin: 15px auto 0 auto;  /* 15px отступ сверху, а auto выровняет её ровно по центру панели */
+  padding: 12px;             /* Сделаем её такой же пухлой, как соседние кнопки */
+  cursor: pointer;           /* Чтобы при наведении курсор менялся на «пальчик» */
+  transition: background-color 0.2s; /* Плавное изменение цвета при наведении */
+
+}
+
+/* 2. Стили, которые включатся при активации темной темы */
+body.dark-theme {
+  background-color: #1a1a1a; /* Тёмный фон */
+  color: #f5f5f5;            /* Светлый текст */
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F0F0F6;
