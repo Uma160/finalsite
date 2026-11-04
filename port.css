@@ -34,8 +34,7 @@ body {
 .colorbutton{
   background-color: yellow;
   width: 300;
-  display: block;
-  margin: 15px auto 0 auto;  /* 15px отступ сверху, а auto выровняет её ровно по центру панели */
+  display: block;  /* 15px отступ сверху, а auto выровняет её ровно по центру панели */
   padding: 12px;             /* Сделаем её такой же пухлой, как соседние кнопки */
   cursor: pointer;           /* Чтобы при наведении курсор менялся на «пальчик» */
   transition: background-color 0.2s; /* Плавное изменение цвета при наведении */
