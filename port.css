@@ -19,6 +19,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Контейнер всей шапки (логотип + меню) */
+.navi {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+}
+
+/* 1. ИСПРАВЛЕНО: Применяем flex и убираем точки у самого списка UL */
+.nav-links {
+  display: flex;        /* Выстраивает li (пункты) в строку */
+  list-style: none;     /* Полностью убирает маркеры-точки */
+  gap: 20px;            /* Делает расстояние между пунктами меню */
+  margin: 0;            /* Сбрасывает браузерные отступы */
+  padding: 0;
+}
+
+/* 2. ИСПРАВЛЕНО: Ссылки внутри списка делаем обычными строками */
+.nav-links a {
+  color: white;
+  text-decoration: none; /* Убирает нижнее подчеркивание */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Эффект при наведении на ссылку */
+.nav-links a:hover {
+  color: #ff9900;
+}
+
 
 body {
   background-color: #ffffff; 
