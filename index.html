@@ -13,28 +13,32 @@
     <link rel="stylesheet" href="https://cloudflare.com">
     
     <link rel="stylesheet" href="port.css">
-    <link class="iconphoto" rel="icon" href="WhatsApp Image 2026-10-13 at 13.11.38.jpeg" type="image/png">
-
 </head>
 <header>
-    <nav class="navi">
-        <ul class="nav-links">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#avatarka">Подробности</a></li>
-            <li><a href="#resume">Резюме</a></li>
-            <li><a href="#gmail">Почта</a></li>
-        </ul>
-    </nav>
     <!-- Кнопка для переключения темы -->
     <button class="colorbutton" onclick="toggleTheme()">Сменить тему</button>
+    <nav class="main-navbar">
+    <ul class="nav-links">
+        <li><a href="#home">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Работы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+</nav>
+
+
 </header>
 
-<body>
 
-<main class="main-container">
+<body>
+        
+
+
+
+<main id="home" class="main-container">
 
     <!-- 1. ЛЕВАЯ ПАНЕЛЬ -->
-    <aside id="avatarka"    class="leftside">
+    <aside class="leftside">
         <div class="profile-header">
             <div class="avatar-container">
                 <img src="WhatsApp Image 2026-10-13 at 13.11.38.jpeg" alt="Tolonbaev Umar" class="ava">
@@ -84,10 +88,10 @@
 
     <!-- 2. ЦЕНТРАЛЬНАЯ ОБЛАСТЬ -->
     <div class="content-area">
-        <!-- Кнопка для переключения темы -->
-    
+        
+        
         <!-- Блок карточки Hero -->
-        <section id="resume" class="hero">
+        <section class="hero">
             <div class="hero-text-block">
                 <h1 class="intro">
                     I'm Tolonbaev Umar, <br>
@@ -114,7 +118,7 @@
             
 
             <!-- ИСПРАВЛЕНО: Добавлены иконки в карточки услуг -->
-            <div class="services-grid">
+            <div id="services" class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-code"></i></div>
                     <h3>Web Development</h3>
@@ -148,7 +152,7 @@
             </div>
         </section>
                 <!-- СЕКЦИЯ EDUCATION -->
-        <section class="education-section">
+        <section id="awards" class="education-section">
             <div class="education-header">
                 <h2>Education</h2>
             </div>
@@ -214,7 +218,7 @@
         <!-- ... Конец секции education-section ... -->
 
         <!-- ИСПРАВЛЕНО: Добавлен подвал (Footer) -->
-        <footer id="gmail" class="footer-portfolio">
+        <footer id="contact" class="footer-portfolio">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="text" id="email" placeholder="Введите ваш Email">
