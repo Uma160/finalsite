@@ -19,40 +19,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Контейнер всей шапки (логотип + меню) */
-.navi {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  position: fixed;
-  z-index: 10;
+
+.main-navbar {
+    width: 100%;/* Уменьшили ширину, чтобы она совпала с вашим основным контентом */
+    margin: 0 auto;    /* Центрирует меню на экране */
+    padding: 20px 20px; /* Минимальные отступы, чтобы ссылки не вылетали за границы */
+    box-sizing: border-box;
 }
 
-/* 1. ИСПРАВЛЕНО: Применяем flex и убираем точки у самого списка UL */
 .nav-links {
-  display: flex;        /* Выстраивает li (пункты) в строку */
-  list-style: none;     /* Полностью убирает маркеры-точки */
-  gap: 20px;            /* Делает расстояние между пунктами меню */
-  margin: 0;            /* Сбрасывает браузерные отступы */
-  padding: 0;
-
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяет ссылки внутри этих 1280px */
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* 2. ИСПРАВЛЕНО: Ссылки внутри списка делаем обычными строками */
+
+
 .nav-links a {
-  color: white;
-  text-decoration: none; /* Убирает нижнее подчеркивание */
-  font-size: 16px;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase; /* Делает буквы заглавными (по желанию) */
+    transition: color 0.3s ease;
 }
 
-/* Эффект при наведении на ссылку */
 .nav-links a:hover {
-  color: #ff9900;
+    color: #ffb400; /* Желтый цвет при наведении как у вашей кнопки HIRE ME */
 }
 
+header {
+    background-color: white;
+    width: 100%;
+    max-width: 1260px; /* Сжимаем сам хедер */
+    margin: 0 auto;   /* Центрируем его */
+}
 
 body {
   background-color: #ffffff; 
@@ -61,13 +66,12 @@ body {
 }
 
 .colorbutton{
-  background-color: yellow;
-  width: 300px;
-  display: block;  
-  padding: 12px;             
-  cursor: pointer;           
-  transition: background-color 0.2s; 
-
+   width: 100%;
+    margin: 0 auto;   /* Центрирует весь контейнер с навигацией на странице */
+    box-sizing: border-box;
+    padding: 20px 0;  /* Убираем боковые отступы, так как контейнер уже центрирован */
+    background-color: transparent; /* Делаем фон прозрачным, чтобы гармонировал с сайтом */
+    background-color: brown;
 }
 
 body.dark-theme {
